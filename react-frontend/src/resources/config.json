@@ -1,0 +1,1502 @@
+{
+  "projectName": "test-app1",
+  "description": "Test App 1",
+  "auth": "jwt",
+  "database": {
+    "pathToLogo": {
+      "s": "/assets/applications_logos/mongodb-s.png",
+      "l": "/assets/applications_logos/mongodb.png"
+    },
+    "appName": "mongodb-database",
+    "disabled": false,
+    "type": "database",
+    "name": "mongodb",
+    "label": "MongoDB"
+  },
+  "stack": [
+    {
+      "appName": "nodejs-backend",
+      "environments": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "pathToLogo": {
+        "s": "/assets/applications_logos/nodejs-s.png",
+        "l": "/assets/applications_logos/nodejs.png"
+      },
+      "type": "backend",
+      "name": "nodejs",
+      "label": "Node.js Express Feathers.js"
+    },
+    {
+      "appName": "react-frontend",
+      "environments": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "pathToLogo": {
+        "s": "/assets/applications_logos/react-s.png",
+        "l": "/assets/applications_logos/react.png"
+      },
+      "type": "frontend",
+      "name": "react",
+      "label": "React JavaScript"
+    }
+  ],
+  "services": [
+    {
+      "serviceName": "users",
+      "databaseName": "users",
+      "displayName": "Users",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [],
+      "schemaList": [
+        {
+          "fieldName": "name",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Name",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23bd"
+          },
+          "min": 2,
+          "max": 100,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "email",
+          "type": "String",
+          "unique": true,
+          "lowercase": true,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Email",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23be"
+          },
+          "min": 5,
+          "max": 150,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "password",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": false,
+          "displayOnSingle": false,
+          "displayOnDataTable": false,
+          "creatable": true,
+          "editable": false,
+          "sortable": false,
+          "required": true,
+          "component": "p",
+          "label": "Password",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23bf"
+          },
+          "min": 5,
+          "max": 300,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": true,
+      "seeder": [],
+      "skip": true,
+      "downloadable": true,
+      "uploadable": false,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "cars",
+      "databaseName": "cars",
+      "displayName": "Cars",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [],
+      "schemaList": [
+        {
+          "fieldName": "name",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Name",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "66f4bf3c743a898bf29be197"
+          },
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "brand",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": true,
+          "component": "p",
+          "label": "Brand",
+          "faker": {
+            "module": "lorem",
+            "subModule": "sentence",
+            "args": "1",
+            "skip": false,
+            "_id": "66f4bf3c743a898bf29be198"
+          },
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": false,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "trainingProgramOwnership",
+      "databaseName": "training_program_ownership",
+      "displayName": "Training Program Ownership",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "organizationName",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Organization Name",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23c4"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "organizationType",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Organization Type",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23c5"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "ownershipType",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Ownership Type",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23c6"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "organizationName": "Cloud Basha",
+          "organizationType": "Sendirian Berhad",
+          "ownershipType": "100% Local"
+        },
+        {
+          "organizationName": "Code Bridge",
+          "organizationType": "Berhad",
+          "ownershipType": "International"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "trainingProviderInformation",
+      "databaseName": "training_provider_information",
+      "displayName": "Training Provider Information",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "organizationName",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Organization Name",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23c8"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "personalContact",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Personal Contact",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23c9"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "trainerProviderAddress",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Trainer Provider Address",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23ca"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "personalContact1",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Personal Contact_1",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23cb"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "organizationName": "Code Bridge Sdn Bhd",
+          "personalContact": "Kana Sabaratnam",
+          "trainerProviderAddress": "C-16-03, Block C, 3 Two Square, 2, Jalan 19/1, Petaling Jaya, Selangor, Malaysia.",
+          "personalContact1": "011-0001222"
+        },
+        {
+          "organizationName": "Cloud Basha Sdn Bhd",
+          "personalContact": "Irfan Aziff ",
+          "trainerProviderAddress": "C-16-03, Block C, 3 Two Square, 2, Jalan 19/1, Petaling Jaya, Selangor, Malaysia.",
+          "personalContact1": "010-0001234"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "officerInCharge",
+      "databaseName": "officer_in_charge",
+      "displayName": "Officer In Charge",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "name",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Name",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23cd"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "icNumber",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "IC Number",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23ce"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "designation",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Designation",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23cf"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "email",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Email",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23d0"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "telephoneNumber",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Telephone Number",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23d1"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "organizationName",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Organization Name",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23d2"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "name": "Kana Sabaratnam",
+          "icNumber": "000000-00-0000",
+          "designation": "Director",
+          "email": "kana@codebridge.com",
+          "telephoneNumber": "011-0012345",
+          "organizationName": "Code Bridge Sdn Bhd"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "businessInformation",
+      "databaseName": "business_information",
+      "displayName": "Business Information",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "organizationName",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Organization Name",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23d4"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "numberOfEmployees",
+          "type": "Number",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_number",
+          "label": "Number of Employees",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23d5"
+          },
+          "min": 0,
+          "max": 10000000,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "fullTimeTrainers",
+          "type": "Number",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_number",
+          "label": "Full Time Trainers",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23d6"
+          },
+          "min": 0,
+          "max": 10000000,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "partTimeTrainers",
+          "type": "Number",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": false,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p_number",
+          "label": "Part Time Trainers",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23d7"
+          },
+          "min": 0,
+          "max": 10000000,
+          "enum": [],
+          "index": false,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "organizationName": "Code Bridge Sdn Bhd",
+          "numberOfEmployees": 10,
+          "fullTimeTrainers": 8,
+          "partTimeTrainers": 2
+        },
+        {
+          "organizationName": "Cloud Basha Sdn Bhd",
+          "numberOfEmployees": 8,
+          "fullTimeTrainers": 8,
+          "partTimeTrainers": 0
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    },
+    {
+      "serviceName": "trainerDetails",
+      "databaseName": "trainer_details",
+      "displayName": "Trainer Details",
+      "icon": "pi pi-cog",
+      "create": true,
+      "edit": true,
+      "delete": true,
+      "single": true,
+      "sidebar": [
+        "users"
+      ],
+      "schemaList": [
+        {
+          "fieldName": "trainerIcNumber",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Trainer IC Number",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23d9"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "name",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Name",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23da"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "employmentType",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Employment Type",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23db"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "nationality",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Nationality",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23dc"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        },
+        {
+          "fieldName": "organizationName",
+          "type": "String",
+          "unique": false,
+          "lowercase": false,
+          "uppercase": false,
+          "trim": true,
+          "display": true,
+          "displayOnEdit": true,
+          "displayOnSingle": true,
+          "displayOnDataTable": true,
+          "creatable": true,
+          "editable": true,
+          "sortable": true,
+          "required": false,
+          "component": "p",
+          "label": "Organization Name",
+          "faker": {
+            "skip": false,
+            "_id": "66f502b3743a898bf29c23dd"
+          },
+          "min": 2,
+          "max": 1000,
+          "enum": [],
+          "index": true,
+          "autocomplete": false,
+          "lazy": false,
+          "reverse": false,
+          "morph": false,
+          "through": false,
+          "prefix": "",
+          "suffix": "",
+          "args": [],
+          "auditing": false,
+          "warehousing": false,
+          "searchable": false,
+          "mode": "currency",
+          "currency": {
+            "currency": "MYR",
+            "locale": "en-US"
+          },
+          "reference": {
+            "identifierFieldName": []
+          }
+        }
+      ],
+      "layout": false,
+      "seeder": [
+        {
+          "trainerIcNumber": "123456-78-9101",
+          "name": "Ahmad Zulkifli",
+          "employmentType": "Full Time",
+          "nationality": "Malaysian",
+          "organizationName": "Code Bridge Sdn Bhd"
+        },
+        {
+          "trainerIcNumber": "234567-89-0123",
+          "name": "Siti Aishah",
+          "employmentType": "Part Time",
+          "nationality": "Malaysian",
+          "organizationName": "Code Bridge Sdn Bhd"
+        },
+        {
+          "trainerIcNumber": "345678-90-1234",
+          "name": "Ravi Kumar",
+          "employmentType": "Full Time",
+          "nationality": "Malaysian",
+          "organizationName": "Code Bridge Sdn Bhd"
+        },
+        {
+          "trainerIcNumber": "456789-01-2345",
+          "name": "Lina Abdul Rahman",
+          "employmentType": "Part Time",
+          "nationality": "Malaysian",
+          "organizationName": "Code Bridge Sdn Bhd"
+        }
+      ],
+      "skip": false,
+      "downloadable": true,
+      "uploadable": true,
+      "sharable": false,
+      "ai": false,
+      "warehouse": false
+    }
+  ]
+}

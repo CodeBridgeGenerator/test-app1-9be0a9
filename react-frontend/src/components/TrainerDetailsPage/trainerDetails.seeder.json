@@ -1,0 +1,30 @@
+[
+    {
+        "trainerIcNumber": "123456-78-9101",
+        "name": "Ahmad Zulkifli",
+        "employmentType": "Full Time",
+        "nationality": "Malaysian",
+        "organizationName": "Code Bridge Sdn Bhd"
+    },
+    {
+        "trainerIcNumber": "234567-89-0123",
+        "name": "Siti Aishah",
+        "employmentType": "Part Time",
+        "nationality": "Malaysian",
+        "organizationName": "Code Bridge Sdn Bhd"
+    },
+    {
+        "trainerIcNumber": "345678-90-1234",
+        "name": "Ravi Kumar",
+        "employmentType": "Full Time",
+        "nationality": "Malaysian",
+        "organizationName": "Code Bridge Sdn Bhd"
+    },
+    {
+        "trainerIcNumber": "456789-01-2345",
+        "name": "Lina Abdul Rahman",
+        "employmentType": "Part Time",
+        "nationality": "Malaysian",
+        "organizationName": "Code Bridge Sdn Bhd"
+    }
+]

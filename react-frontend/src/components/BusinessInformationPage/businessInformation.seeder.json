@@ -1,0 +1,14 @@
+[
+    {
+        "organizationName": "Code Bridge Sdn Bhd",
+        "numberOfEmployees": 10,
+        "fullTimeTrainers": 8,
+        "partTimeTrainers": 2
+    },
+    {
+        "organizationName": "Cloud Basha Sdn Bhd",
+        "numberOfEmployees": 8,
+        "fullTimeTrainers": 8,
+        "partTimeTrainers": 0
+    }
+]
